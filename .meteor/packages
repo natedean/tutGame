@@ -8,3 +8,6 @@ bootstrap-3
 jquery
 iron-router
 jquery-ui
+accounts-google
+accounts-facebook
+accounts-ui

@@ -1,0 +1,22 @@
+
+div#bs-example-navbar-collapse-1 {
+overflow: visible;
+}
+
+
+@media (min-width: 768px){
+  #login-dropdown-list{
+    margin-left: -170px;
+  }
+  #login-buttons{
+    margin-top:15px;
+    margin-right:15px;
+  } 
+}
+
+@media (max-width: 767px){
+  #login-buttons{
+    margin-left: 15px;
+  } 
+}
+
