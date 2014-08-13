@@ -1,8 +1,6 @@
-
-div#bs-example-navbar-collapse-1 {
-overflow: visible;
+.navbar-collapse.collapse.in{
+  overflow: visible;
 }
-
 
 @media (min-width: 768px){
   #login-dropdown-list{
@@ -17,6 +15,10 @@ overflow: visible;
 @media (max-width: 767px){
   #login-buttons{
     margin-left: 15px;
-  } 
+  }
+  #login-dropdown-list{
+    position:absolute;
+    margin-top:-150px;
+  }
 }
 

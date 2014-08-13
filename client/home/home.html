@@ -1,7 +1,16 @@
 
 <template name="home">
   <h1>Home Page</h1>
-  <div class="row">
+  {{#if currentUser}}
+  {{> userArea}}
+  {{else}}
+  <p>Hey... psst... buddy... there is stuff here that displays if you log in.</p>
+  {{/if}}
+</template>
+
+
+<template name="userArea">
+<div class="row">
     <div class="col-sm-6 text-center">
       {{greeting}}
       <br>  
@@ -12,4 +21,3 @@
     </div>
   </div><!-- end row -->
 </template>
-

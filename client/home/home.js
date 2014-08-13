@@ -1,10 +1,10 @@
 var clickCounter = 0;
 
-  Template.home.greeting = function () {
-    return "Welcome to template.";
+  Template.userArea.greeting = function () {
+    return "You logged in!  Give yourself a pat on the back.";
   };
 
-  Template.home.events({
+  Template.userArea.events({
     'click input': function () {
       // template data, if any, is available in 'this'
     clickCounter++;  
