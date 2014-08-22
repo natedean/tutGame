@@ -16,11 +16,32 @@
   position: relative;
 }
 
-@media (min-width: 768px){
 
+@media (min-width: 768px){
+  #navLogin #login-dropdown-list{
+    margin-left: -170px;
+    position: absolute;
+  }
+  #navLogin #login-buttons{
+    margin-top:18px;
+    margin-right:15px;
+  }
+  #navLogin a.login-link-text{
+    color: white;
+  }
+  #navLogin .accounts-dialog{
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767px){
-
+  #navLogin  #login-buttons{
+    margin-left: 15px;
+    height: auto;
+  }
+  #navLogin #login-dropdown-list{
+    position:absolute;
+    margin-top:-150px;
+  }
 }
 

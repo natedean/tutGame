@@ -2,10 +2,19 @@
 <h3 class="text-center">Welcome to IAC!</h3>
   <p class="text-center">Play this game and get a big discount code!  You might even learn something.
   <br>
-    To play you have to login.  This lets us save your score so you can pick up the game later.
   </p>
   <div class="text-center">
-    {{> loginButtons}}
+    {{#if currentUser}}
+       You are signed in, and we can save your score.  You can quit any time and come back resume where you left off.  Be sure to write down your username and password.
+    <div class="text-center">
+      <div id="startNow" class="btn btn-lg btn-success">Start Now</div>
+    </div>
+    {{else}}
+    To play you have to login.  This lets us save your score so you can pick up the game later.
+      <div id="centerPageLogin"  class="text-center">
+        {{> loginButtons}}
+      </div>  
+    {{/if}}
   </div>
 
 </template>

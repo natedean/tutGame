@@ -29,6 +29,11 @@
           </ul>
         </li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{#if currentUser}}
+        <li id="navLogin">{{> loginButtons}}</li>
+        {{/if}}
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

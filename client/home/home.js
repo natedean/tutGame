@@ -3,7 +3,10 @@ Session.setDefault('slideNumber', 0);
 Session.setDefault('playerScore', 0);
 
 Template.home.helper = function(){
-  return "slide" + Session.get('slideNumber');
+  if(Meteor.user())
+    return "slide" + Meteor.user().profile.score;
+  else
+    return "slide0" 
 }
 
 Template.home.showNextBtn = function(){
@@ -22,7 +25,13 @@ Template.home.events({
 });
 
 Template.home.playerScore = function(){
-  return Session.get('playerScore');
+    if (Meteor.user()){
+      console.log(Meteor.user());
+      return Meteor.user().profile.score;
+    }
+    else{
+      return 0;
+    }
 } 
 
 
