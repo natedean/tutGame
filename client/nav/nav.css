@@ -12,23 +12,15 @@
   overflow: visible;
 }
 
+#login-dropdown-list {
+  position: relative;
+}
+
 @media (min-width: 768px){
-  #login-dropdown-list{
-    margin-left: -170px;
-  }
-  #login-buttons{
-    margin-top:15px;
-    margin-right:15px;
-  } 
+
 }
 
 @media (max-width: 767px){
-  #login-buttons{
-    margin-left: 15px;
-  }
-  #login-dropdown-list{
-    position:absolute;
-    margin-top:-150px;
-  }
+
 }
 

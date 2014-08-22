@@ -1,5 +1,5 @@
-Session.setDefault('readyForNext', true);
-Session.setDefault('slideNumber', 1);
+Session.setDefault('readyForNext', false);
+Session.setDefault('slideNumber', 0);
 Session.setDefault('playerScore', 0);
 
 Template.home.helper = function(){

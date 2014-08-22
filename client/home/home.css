@@ -1,5 +1,10 @@
 /* CSS declarations go here */
 
+.accounts-dialog {
+  margin-top: -100px;
+  height: 220px;
+}
+
 #gameBoard{
   width:95%;
   height: 500px;

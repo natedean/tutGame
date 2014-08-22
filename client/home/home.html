@@ -5,34 +5,28 @@
     {{> UI.dynamic template=helper}}
   </div>
   <div id="gameBoardFooter">
+    <span class="pull-left">Score: {{playerScore}}</span>
     {{#if showNextBtn}}
-      <span class="pull-left">Score: {{playerScore}}</span>
       <span id="nextSlide" class="pull-right btn btn-danger btn-sm">Next Slide</span>
     {{/if}}
   </div>
 </template>
 
 
-<template name="slide1">
-<h3 class="text-center">Slide 1</h3>
-  <p class="text-center">What is the difference between a shaker style and a ceramic baghouse?</p>
-  {{> temp}}
-</template>
+
+
+
+
 
 <template name="slide2">
 <h3 class="text-center">Slide 2</h3>
-  {{> temp}}
+
 </template>
 
 <template name="slide3">
 <h3 class="text-center">Slide 3</h3>
-  {{> temp}}
+
 </template>
 
-<template name="temp">
-  <div class="text-center">
-    <div id="slideCompleted" class="btn btn-lg btn-primary">Completed</div>
-  </div>
-</template>
 
 
