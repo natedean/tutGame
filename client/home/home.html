@@ -1,23 +1,38 @@
 
 <template name="home">
-  <h1>Home Page</h1>
-  {{#if currentUser}}
-  {{> userArea}}
-  {{else}}
-  <p>Hey... psst... buddy... there is stuff here that displays if you log in.</p>
-  {{/if}}
+  <h1 class="text-center">IAC Tutorial Game</h1>
+  <div id="gameBoard">
+    {{> UI.dynamic template=helper}}
+  </div>
+  <div id="gameBoardFooter">
+    {{#if showNextBtn}}
+      <span class="pull-left">Score: {{playerScore}}</span>
+      <span id="nextSlide" class="pull-right btn btn-danger btn-sm">Next Slide</span>
+    {{/if}}
+  </div>
 </template>
 
 
-<template name="userArea">
-<div class="row">
-    <div class="col-sm-6 text-center">
-      {{greeting}}
-      <br>  
-      <input class="btn btn-success" type="button" value="Say Hello" />
-    </div>
-    <div class="col-sm-6 text-center">
-      <p id="greeting"></p>
-    </div>
-  </div><!-- end row -->
+<template name="slide1">
+<h3 class="text-center">Slide 1</h3>
+  <p class="text-center">What is the difference between a shaker style and a ceramic baghouse?</p>
+  {{> temp}}
 </template>
+
+<template name="slide2">
+<h3 class="text-center">Slide 2</h3>
+  {{> temp}}
+</template>
+
+<template name="slide3">
+<h3 class="text-center">Slide 3</h3>
+  {{> temp}}
+</template>
+
+<template name="temp">
+  <div class="text-center">
+    <div id="slideCompleted" class="btn btn-lg btn-primary">Completed</div>
+  </div>
+</template>
+
+

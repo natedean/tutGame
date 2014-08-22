@@ -1,1 +1,30 @@
 /* CSS declarations go here */
+
+#gameBoard{
+  width:95%;
+  height: 500px;
+  background-color: rgba(0, 130, 196, 0.12);
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+#gameBoardFooter{
+  width:95%;
+  height: 40px;
+  background-color: rgba(0, 130, 196, 0.28);
+  margin: 0 auto;
+  padding: 5px 5% 0 5%;
+}
+
+
+@media (max-width: 768px) {
+    #gameBoard{
+    height: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+    #gameBoard{
+    height: 260px;
+  }
+}
